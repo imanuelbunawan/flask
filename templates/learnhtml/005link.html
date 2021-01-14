@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LINK</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    <style type="text/css">
+        .nav {
+            display: flex;
+            /*flex-wrap: wrap;*/
+        }
+ 
+        .nav .company h1 {
+            font-size: 20px;
+            color: cyan;
+        }
+ 
+        .nav .menu ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+ 
+        .nav .menu li {
+            list-style: none;
+            margin-right: 30px;
+        }
+ 
+        .nav .menu li a {
+            text-decoration: none;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+ 
+        .panda span {
+            color: white;
+        }
+ 
+        .belajar-div p {
+            height: 300px;
+            text-align: center;
+            padding: 50px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGASI -->
+    <div class="nav">
+        <div class="company">
+            <h1>ABED STORE AKSESORIS HP</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#grizzly">Grizzly</a></li>
+                <li><a href="#panda">Panda</a></li>
+                <li><a href="#icebear">Ice Bear</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- END OF NAVIGASI -->
+ 
+ 
+    <h2>MY STORY</h2>
+ 
+    <!-- LINK Eksternal -->
+    <!-- CTRL+/ Command HTML -->
+    <a href="http://google.com" style="font-size: 25px;text-decoration: none;">Ke Google</a>
+    <br>
+    <!-- LINK di dalam server sendiri dg jinja -->
+    <a href="{{url_for('my')}}">Ke Profil</a>
+    <p style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <table style="border: 2px solid black;">
+        <tr>
+            <th>Nama</th>
+            <th>Kelas</th>
+        </tr>
+        <tr>
+            <td>Erin</td>
+            <td>XI KOMPUTER</td>
+        </tr>
+    </table>
+ 
+    <!-- Belajar DIV -->
+    <div class="belajar-div">
+    
+        <div class="grizzly" id="grizzly">
+            <h2>Beruang Grizzly</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+ 
+        <div class="panda" id="panda">
+            <h2>Panda</h2>
+            <p>
+                Lorem <span>ipsum dolor</span> sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+ 
+        <div class="icebear" id="icebear">
+            <h2>Ice Bear</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+ 
+    </div>
+ 
+</body>
+</html
